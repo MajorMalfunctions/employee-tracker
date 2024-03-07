@@ -45,7 +45,7 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
         Swal.fire({
             icon: 'success',
             title: 'Updated!',
-            text: `${employee.firstName} ${employee.lastName}'s data has been updated.`,
+            text: `₱{employee.firstName} ₱{employee.lastName}'s data has been updated.`,
             showConfirmButton: false,
             timer: 1500
         });
@@ -79,7 +79,7 @@ function Edit({ employees, selectedEmployee, setEmployees, setIsEditing }) {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
-                <label htmlFor="salary">Salary ($)</label>
+                <label htmlFor="salary">Salary (₱)</label>
                 <input
                     id="salary"
                     type="number"

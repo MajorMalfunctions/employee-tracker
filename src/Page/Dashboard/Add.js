@@ -42,7 +42,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
         Swal.fire({
             icon: 'success',
             title: 'Added!',
-            text: `${firstName} ${lastName}'s data has been Added.`,
+            text: `₱{firstName} ₱{lastName}'s data has been Added.`,
             showConfirmButton: false,
             timer: 1500
         });
@@ -78,7 +78,7 @@ function Add({ employees, setEmployees, setIsAdding }) {
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
-                <label htmlFor="salary">Salary ($)</label>
+                <label htmlFor="salary">Salary (₱)</label>
                 <input
                     id="salary"
                     type="number"
